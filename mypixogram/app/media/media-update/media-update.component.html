@@ -1,0 +1,18 @@
+<div>
+    <h3>Update Media</h3>
+    <div class="row">
+      <div class="col"><label for="">Media name</label></div>
+      <div class="col"><input type="text" value="{{media.name}}" #txtName /></div>
+    </div>
+    <div class="row">
+      <div class="col"><label for="">Media category</label></div>
+      <div class="col"><input type="text" value="{{media.category}}" #txtCategory /></div>
+    </div><div class="row">
+      <div class="col"><label for="">Media cost</label></div>
+      <div class="col"><input type="text" value="{{media.cost}}" #txtCost /></div>
+    </div>
+    <div class="row">
+      
+      <div class="col"><input type="button" value="Update" (click)="updateMedia(txtName, txtCategory, txtCost)" /></div>
+    </div>
+  </div>
